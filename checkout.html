@@ -1,0 +1,406 @@
+<html>
+ <head>
+  <title>
+   ALFAIZ DIGITAL MARKET
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   .slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+   }
+   .slider::-webkit-scrollbar {
+    display: none;
+   }
+   .slider-item {
+    flex: none;
+    scroll-snap-align: start;
+    margin-right: 1rem;
+    width: 150px; /* Adjusted width for smaller catalog items */
+   }
+   .toggle-button {
+    width: 50px;
+    height: 25px;
+    background-color: #4A5568;
+    border-radius: 9999px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   }
+   .toggle-button .toggle-circle {
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+   }
+   .toggle-button.dark .toggle-circle {
+    transform: translateX(25px);
+   }
+   .toggle-button.dark {
+    background-color: #A0AEC0;
+   }
+  </style>
+ </head>
+ <body class="bg-white text-black font-sans transition-colors duration-300">
+  <header class="flex items-center justify-between p-4 border-b">
+   <span class="font-bold text-lg">
+    ALFAIZ DIGITAL MARKET
+   </span>
+   <div class="flex items-center space-x-4">
+    <div id="theme-toggle" class="toggle-button">
+     <div class="toggle-circle">
+     </div>
+    </div>
+   </div>
+  </header>
+  <main class="p-4">
+   <section class="mb-8">
+    <div class="flex justify-between items-center mb-4">
+     <h2 class="text-xl font-bold">
+      BEST SELLER
+     </h2>
+    </div>
+    <div class="slider">
+<div class="slider-item text-center relative">
+      <img alt="VPS DIGITAL OCEAN 16/4" class="rounded-lg mb-2" height="150" src="https://files.catbox.moe/wzth6l.jpg" width="150"/>
+      <h3 class="font-semibold text-sm">
+       VPS DIGITAL OCEAN 16/4
+      </h3>
+      <p class="text-gray-600 text-xs">
+       Rp 60.000
+      </p>
+      <div class="flex justify-center space-x-4 mt-2">
+       <button class="choose-item" data-name="VPS DIGITAL OCEAN 16/4" data-price="60000" data-description="VPS DIGITAL OCEAN OS UBUNTU 16GB 4CORE GARANSI 15Day 1X Replace NO T.O.S JIKA MELANGGAR GARANSI HILANG!!.">
+        <i class="fas fa-check-circle text-lg">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="slider-item text-center">
+      <img alt="VPS DIGITAL OCEAN 8/4" class="rounded-lg mb-2" height="150" src="https://files.catbox.moe/wzth6l.jpg" width="150"/>
+      <h3 class="font-semibold text-sm">
+       VPS DIGITAL OCEAN 8/4
+      </h3>
+      <p class="text-gray-600 text-xs">
+       Rp 45.000
+      </p>
+      <div class="flex justify-center space-x-4 mt-2">
+       <button class="choose-item" data-name="VPS UBUNTU 8/4" data-price="45000" data-description="VPS DIGITAL OCEAN OS UBUNTU RAM 8GB CPU 4CORE GARANSI 15Day 1X Replace NO T.O.S JIKA MELANGGAR GARANSI HILANG.">
+        <i class="fas fa-check-circle text-lg">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="slider-item text-center">
+      <img alt="PANEL PTERODACTYL PRIVATE" class="rounded-lg mb-2" height="150" src="https://files.catbox.moe/hv0nl5.jpg" width="150"/>
+      <h3 class="font-semibold text-sm">
+       PANEL PTERODACTYL PRIVATE
+      </h3>
+      <p class="text-gray-600 text-xs">
+       Rp 13.000
+      </p>
+      <div class="flex justify-center space-x-4 mt-2">
+       <button class="choose-item" data-name="PANEL PTERODACTYL PRIVATE" data-price="13000" data-description="Panel Pterodactyl Private Server Cpu:Unlimited Disk/Memo:Unlimited.">
+        <i class="fas fa-check-circle text-lg">
+        </i>
+       </button>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section>
+    <div class="flex justify-between items-center mb-4">
+     <h2 class="text-xl font-bold">
+      PANEL PTERODACTYL
+     </h2>
+    </div>
+    <div class="slider">
+     <div class="slider-item text-center relative">
+      <img alt="Panel Pterodactyl Private 0/0" class="rounded-lg mb-2" height="150" src="https://files.catbox.moe/hv0nl5.jpg" width="150"/>
+      <span class="absolute top-0 left-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-tr-lg rounded-bl-lg">
+       HOT
+      </span>
+      <h3 class="font-semibold text-sm">
+       Panel Pterodactyl Private 0/0
+      </h3>
+      <p class="text-gray-600 text-xs">
+       Rp 13.000
+      </p>
+      <div class="flex justify-center space-x-4 mt-2">
+       <button class="choose-item" data-name="Panel Pterodactyl Private 0/0" data-price="13000" data-description="Panel Pterodactyl Private Cpu:Unlimited Disk/Memo:Unlimited.">
+        <i class="fas fa-check-circle text-lg">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="slider-item text-center relative">
+      <img alt="PANEL PTERODACTYL PRIVATE 9/180" class="rounded-lg mb-2" height="150" src="https://files.catbox.moe/hv0nl5.jpg" width="150"/>
+      <h3 class="font-semibold text-sm">
+       Panel Pterodactyl Private 9/180 
+      </h3>
+      <p class="text-gray-600 text-xs">
+       Rp 9.000
+      </p>
+      <div class="flex justify-center space-x-4 mt-2">
+       <button class="choose-item" data-name="PANEL PTERODACTYL PRIVATE 9/180" data-price="9000" data-description="PANEL PTERODACTYL PRIVATE Cpu:180% Disk/Memo:9GB.">
+        <i class="fas fa-check-circle text-lg">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="slider-item text-center">
+      <img alt="PANEL PTERODACTYL PRIVATE 8/160" class="rounded-lg mb-2" height="150" src="https://files.catbox.moe/hv0nl5.jpg" width="150"/>
+      <h3 class="font-semibold text-sm">
+       PANEL PTERODACTYL PRIVATE 8/160
+      </h3>
+      <p class="text-gray-600 text-xs">
+       Rp 8.000
+      </p>
+      <div class="flex justify-center space-x-4 mt-2">
+       <button class="choose-item" data-name="PANEL PTERODACTYL PRIVATE 8/160" data-price="8000" data-description="Panel Pterodactyl Private CPU:160% Disk/Memo:8Gb.">
+        <i class="fas fa-check-circle text-lg">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="slider-item text-center">
+      <img alt="PANEL PTERODACTYL PRIVATE 7/140" class="rounded-lg mb-2" height="150" src="https://files.catbox.moe/hv0nl5.jpg" width="150"/>
+      <h3 class="font-semibold text-sm">
+       PANEL PTERODACTYL PRIVATE 7/140
+      </h3>
+      <p class="text-gray-600 text-xs">
+       Rp 7.000
+      </p>
+      <div class="flex justify-center space-x-4 mt-2">
+       <button class="choose-item" data-name="PANEL PTERODACTYL PRIVATE 7/140" data-price="9000" data-description="Panel Pterodactyl Private CPU:140% Disk/Memo:7Gb.">
+        <i class="fas fa-check-circle text-lg">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="slider-item text-center">
+      <img alt="PANEL PTERODACTYL PRIVATE 6/120" class="rounded-lg mb-2" height="150" src="https://files.catbox.moe/hv0nl5.jpg" width="150"/>
+      <h3 class="font-semibold text-sm">
+       PANEL PTERODACTYL PRIVATE 6/120
+      </h3>
+      <p class="text-gray-600 text-xs">
+       Rp 6.000
+      </p>
+      <div class="flex justify-center space-x-4 mt-2">
+       <button class="choose-item" data-name="PANEL PTERODACTYL PRIVATE 6/120" data-price="6000" data-description="Panel Pterodactyl Private CPU:120% Disk/Memo:6Gb.">
+        <i class="fas fa-check-circle text-lg">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="slider-item text-center">
+      <img alt="PANEL PTERODACTYL PRIVATE 5/100" class="rounded-lg mb-2" height="150" src="https://files.catbox.moe/hv0nl5.jpg" width="150"/>
+      <h3 class="font-semibold text-sm">
+       PANEL PTERODACTYL PRIVATE 5/100
+      </h3>
+      <p class="text-gray-600 text-xs">
+       Rp 5.000
+      </p>
+      <div class="flex justify-center space-x-4 mt-2">
+       <button class="choose-item" data-name="PANEL PTERODACTYL PRIVATE 5/100" data-price="5000" data-description="Panel Pterodactyl Private CPU:100% Disk/Memo:5Gb.">
+        <i class="fas fa-check-circle text-lg">
+        </i>
+       </button>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section>
+    <div class="flex justify-between items-center mb-4">
+     <h2 class="text-xl font-bold">
+      VPS DIGITAL OCEAN
+     </h2>
+    </div>
+    <div class="slider">
+     <div class="slider-item text-center relative">
+      <img alt="VPS DIGITAL OCEAN 16/4" class="rounded-lg mb-2" height="150" src="https://files.catbox.moe/wzth6l.jpg" width="150"/>
+      <span class="absolute top-0 left-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-tr-lg rounded-bl-lg">
+       HOT
+      </span>
+      <h3 class="font-semibold text-sm">
+       VPS DIGITAL OCEAN 16/4
+      </h3>
+      <p class="text-gray-600 text-xs">
+       Rp 60.000
+      </p>
+      <div class="flex justify-center space-x-4 mt-2">
+       <button class="choose-item" data-name="VPS DIGITAL OCEAN 16/4" data-price="60000" data-description="Vps Digital Ocean Os Ubuntu Ram 16Gb Cpu 4 Core Garansi 15Day 1X Replace No T.O.S Jika Melanggar Garansi Hangus.">
+        <i class="fas fa-check-circle text-lg">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="slider-item text-center relative">
+      <img alt="VPS DIGITAL OCEAN 8/4" class="rounded-lg mb-2" height="150" src="https://files.catbox.moe/wzth6l.jpg" width="150"/>
+      <span class="absolute top-0 left-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-tr-lg rounded-bl-lg">
+       HOT
+      </span>
+      <h3 class="font-semibold text-sm">
+       VPS DIGITAL OCEAN 8/4
+      </h3>
+      <p class="text-gray-600 text-xs">
+       Rp 45.000
+      </p>
+      <div class="flex justify-center space-x-4 mt-2">
+       <button class="choose-item" data-name="VPS DIGITAL OCEAN 8/4" data-price="45000" data-description="Vps Digital Ocean Os Ubuntu Ram 8Gb Cpu 4 Core Garansi 15Day 1X Replace No T.O.S Jika Melanggar Garansi Hangus.">
+        <i class="fas fa-check-circle text-lg">
+        </i>
+       </button>
+      </div>
+     </div>
+     <div class="slider-item text-center">
+      <img alt="VPS DIGITAL OCEAN 4/2" class="rounded-lg mb-2" height="150" src="https://files.catbox.moe/wzth6l.jpg" width="150"/>
+      <h3 class="font-semibold text-sm">
+       VPS DIGITAL OCEAN 4/2
+      </h3>
+      <p class="text-gray-600 text-xs">
+       Rp 35.000
+      </p>
+      <div class="flex justify-center space-x-4 mt-2">
+       <button class="choose-item" data-name="VPS DIGITAL OCEAN 4/2" data-price="35000" data-description="Vps Digital Ocean Os Ubuntu Ram 4 Cpu 2 Core.">
+        <i class="fas fa-check-circle text-lg">
+        </i>
+       </button>
+      </div>
+     </div>
+    </div>
+   </section>
+   
+   <section class="mt-8">
+    <h2 class="text-xl font-bold mb-4">
+     Pilihan Barang
+    </h2>
+    <div id="choices" class="bg-gray-100 p-4 rounded-lg">
+     <p class="text-gray-600" id="choices-text">
+      Anda belum memilih barang.
+     </p>
+    </div>
+    <div id="descriptions" class="bg-gray-100 p-4 rounded-lg mt-4">
+     <p class="text-gray-600" id="description-text">
+      Deskripsi barang akan muncul di sini.
+     </p>
+    </div>
+    <button id="order-button" class="mt-4 bg-black text-white text-lg font-bold px-4 py-2 rounded-lg" onclick="goToPaymentPage()">
+     Check Out
+    </button>
+   </section>
+  </main>
+  <script>
+   const choices = [];
+   const choicesElement = document.getElementById('choices');
+   const choicesText = document.getElementById('choices-text');
+   const descriptionsElement = document.getElementById('descriptions');
+   const chooseItemButtons = document.querySelectorAll('.choose-item');
+   const orderButton = document.getElementById('order-button');
+   const themeToggleButton = document.getElementById('theme-toggle');
+   let isDarkMode = false;
+
+   chooseItemButtons.forEach(button => {
+    button.addEventListener('click', () => {
+     if (choices.length < 4) {
+      const name = button.getAttribute('data-name');
+      const price = button.getAttribute('data-price');
+      const description = button.getAttribute('data-description');
+      const item = { name, price, description };
+      choices.push(item);
+      updateChoices();
+      updateDescriptions();
+     } else {
+      alert('Anda hanya dapat memilih maksimal 4 barang.');
+     }
+    });
+   });
+
+   function updateChoices() {
+    if (choices.length === 0) {
+     choicesElement.innerHTML = '<p class="text-gray-600" id="choices-text">Anda belum memilih barang.</p>';
+    } else {
+     choicesElement.innerHTML = choices.map(item => `
+       <div class="flex justify-between items-center mb-2">
+         <span class="choice-item">${item.name}</span>
+         <span class="choice-item">Rp ${item.price}</span>
+       </div>
+     `).join('');
+    }
+   }
+
+   function updateDescriptions() {
+    if (choices.length === 0) {
+     descriptionsElement.innerHTML = '<p class="text-gray-600" id="description-text">Deskripsi barang akan muncul di sini.</p>';
+    } else {
+     descriptionsElement.innerHTML = choices.map(item => `
+       <div class="mb-2">
+         <h3 class="font-semibold description-item">${item.name}</h3>
+         <p class="text-gray-600 description-item">${item.description}</p>
+       </div>
+     `).join('');
+    }
+   }
+function goToPaymentPage() {
+            if (choices.length > 0) {
+                const orderDetails = choices.map(item => `${item.name} - Rp ${item.price}`).join('\n');
+                alert(`Order Details:\n${orderDetails}`);
+                // Redirect to a payment page or perform any other action
+                window.location.href = 'deposit.html';
+            } else {
+                alert('Anda belum memilih barang.');
+            }
+        }
+   orderButton.addEventListener('click', () => {
+    if (choices.length > 0) {
+     const orderDetails = choices.map(item => `${item.name} - Rp ${item.price}`).join('\n');
+     alert(`Order Details:\n${orderDetails}`);
+     // Redirect to a checkout page or perform any other action
+     window.location.href = 'checkout.html';
+    } else {
+     alert('Anda belum memilih barang.');
+    }
+   });
+
+   themeToggleButton.addEventListener('click', () => {
+    isDarkMode = !isDarkMode;
+    if (isDarkMode) {
+     document.body.classList.add('bg-black', 'text-white');
+     document.body.classList.remove('bg-white', 'text-black');
+     themeToggleButton.classList.add('dark');
+     orderButton.classList.remove('bg-black', 'text-white');
+     orderButton.classList.add('bg-white', 'text-black');
+     choicesText.classList.add('text-black');
+     document.querySelectorAll('.choice-item').forEach(item => {
+      item.classList.add('text-black');
+     });
+     if (choices.length > 1) {
+      document.querySelectorAll('.description-item').forEach(item => {
+       item.classList.add('text-black');
+      });
+     }
+    } else {
+     document.body.classList.add('bg-white', 'text-black');
+     document.body.classList.remove('bg-black', 'text-white');
+     themeToggleButton.classList.remove('dark');
+     orderButton.classList.remove('bg-white', 'text-black');
+     orderButton.classList.add('bg-black', 'text-white');
+     choicesText.classList.remove('text-black');
+     document.querySelectorAll('.choice-item').forEach(item => {
+      item.classList.remove('text-black');
+     });
+     document.querySelectorAll('.description-item').forEach(item => {
+      item.classList.remove('text-black');
+     });
+    }
+   });
+  </script>
+ </body>
+</html>
