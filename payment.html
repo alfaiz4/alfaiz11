@@ -1,0 +1,143 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Saisha Digital Signage - Payment Window
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+  <script>
+    function applyVoucher() {
+        const voucherInput = document.getElementById('voucher').value;
+        const totalPriceElement = document.getElementById('total-price');
+        let totalPrice = 3500;
+
+        if (voucherInput === 'DISCOUNT10') {
+            totalPrice *= 0.9; // Apply 10% discount
+            alert('Selamat anda berhasil menggunakan Voucher potongan harga');
+        } else {
+            alert('Anda memasukan voucher yang salah');
+        }
+
+        totalPriceElement.textContent = `$${totalPrice.toFixed(2)}`;
+    }
+  </script>
+ </head>
+ <body class="bg-gray-100">
+  <main class="container mx-auto px-4 py-8">
+   <div class="bg-white shadow-md rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+     <h2 class="text-2xl font-bold mb-4">
+      Order Summary
+     </h2>
+     <div class="mb-4">
+      <img alt="Digital Signage Display" class="rounded-lg mb-4" height="200" src="https://via.placeholder.com/300x200.png?text=Digital+Signage+Display" width="300"/>
+      <p>
+       <strong>
+        Product Name:
+       </strong>
+       Digital Signage Display
+      </p>
+      <p>
+       <strong>
+        Product Description:
+       </strong>
+       High-resolution digital signage display for advertising and information.
+      </p>
+      <p>
+       <strong>
+        Quantity:
+       </strong>
+       1
+      </p>
+      <p class="text-xl font-bold mt-4">
+       Price:
+       <span class="text-red-500">
+        $1,500
+       </span>
+      </p>
+     </div>
+     <div class="mb-4">
+      <img alt="Digital Signage Software" class="rounded-lg mb-4" height="200" src="https://via.placeholder.com/300x200.png?text=Digital+Signage+Software" width="300"/>
+      <p>
+       <strong>
+        Product Name:
+       </strong>
+       Digital Signage Software
+      </p>
+      <p>
+       <strong>
+        Product Description:
+       </strong>
+       Software for managing and scheduling content on digital signage displays.
+      </p>
+      <p>
+       <strong>
+        Quantity:
+       </strong>
+       1
+      </p>
+      <p class="text-xl font-bold mt-4">
+       Price:
+       <span class="text-red-500">
+        $2,000
+       </span>
+      </p>
+     </div>
+     <p class="text-xl font-bold mt-4">
+      Total Price:
+      <span class="text-red-500" id="total-price">
+       $3,500
+      </span>
+     </p>
+    </div>
+    <div>
+     <h2 class="text-2xl font-bold mb-4">
+      Payment Details
+     </h2>
+     <form action="process_payment.php" method="POST">
+      <div class="mb-4">
+       <label class="block text-gray-700" for="voucher">
+        Voucher Code
+       </label>
+       <input class="w-full border border-gray-300 rounded-lg p-2 mt-1" id="voucher" name="voucher" type="text"/>
+       <button class="mt-2 bg-black text-white font-bold py-2 px-4 rounded-lg" onclick="applyVoucher()" type="button">
+        Gunakan Voucher
+       </button>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700" for="payment-method">
+        Payment Method
+       </label>
+       <select class="w-full border border-gray-300 rounded-lg p-2 mt-1" id="payment-method" name="payment_method">
+        <option value="dana">
+         DANA
+        </option>
+        <option value="ovo">
+         OVO
+        </option>
+        <option value="gopay">
+         GoPay
+        </option>
+        <option value="qris">
+         QRIS
+        </option>
+       </select>
+      </div>
+      <button class="w-full bg-black text-white font-bold py-2 rounded-lg" type="submit">
+       Bayar Sekarang
+      </button>
+     </form>
+    </div>
+   </div>
+  </main>
+ </body>
+</html>
